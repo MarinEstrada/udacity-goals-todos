@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    image: node:12-alpine
+    command: sh -c "yarn install && yarn start"
+    #command: sh -c "yarn create react-app udacity-goals-todos && cd udacity-goals-todos && yarn add prop-types"
+    ports:
+      - 3000:3000
+    working_dir: /udacity-goals-todos
+    volumes:
+      - ./:/udacity-goals-todos:consistent
+    stdin_open: true
+
