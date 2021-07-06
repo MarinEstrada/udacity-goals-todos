@@ -1,7 +1,7 @@
 //Checker Middleware file
 
-import {ADD_TODO} from '../action/todos'
-import {ADD_GOAL} from '../action/goals'
+import {ADD_TODO} from '../actions/todos'
+import {ADD_GOAL} from '../actions/goals'
 
 //Middleware - Checker
 //after action is dispatched, but before it hits reducer/modifies state

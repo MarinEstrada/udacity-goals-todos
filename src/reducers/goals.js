@@ -6,6 +6,10 @@ import {
     REMOVE_GOAL,
 } from '../actions/goals'
 
+import {
+    RECEIVE_DATA,
+} from '../actions/shared'
+
 // reduces request into a brand new state (must be a pure function)
 // make goals reducer default export
 export default function goals (state = [], action) {

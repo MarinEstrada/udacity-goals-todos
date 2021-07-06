@@ -4,9 +4,9 @@ import React from 'react'
 import {connect} from 'react-redux'
 import List from './List'
 import {
-    handleAddTodo
-    handleDeleteTodo
-    handleToggle
+    handleAddTodo,
+    handleDeleteTodo,
+    handleToggle,
 } from '../actions/todos'
 
 
@@ -26,7 +26,7 @@ class Todos extends React.Component {
     }
 
     toggleItem = (id) => {
-        this.props.dispatch(handleToggleTodo(id))
+        this.props.dispatch(handleToggle(id))
     }
 
     render(){
